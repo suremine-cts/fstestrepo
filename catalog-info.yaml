@@ -1,9 +1,10 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: internal-plugin-todo-list
-  title: '@internal/plugin-todo-list'
+  name: backstage-plugin-catalog-import
+  title: '@backstage/plugin-catalog-import'
+  description: A Backstage plugin the helps you import entities into your catalog
 spec:
   lifecycle: experimental
   type: backstage-frontend-plugin
-  owner: maintainers
+  owner: catalog-maintainers
