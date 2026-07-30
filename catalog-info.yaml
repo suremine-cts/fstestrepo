@@ -1,9 +1,9 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: <component-name>
-  appid: <app-id>
-  description: <description>
+  name: flowsource-sdlc
+  appid: @'flowsource-sdlc'
+  description: flowsource sdlc support
   annotations:
     backstage.io/techdocs-ref: dir:.
     # For GitHub plugin
@@ -29,9 +29,9 @@ metadata:
     flowsource/dynatrace-clusterName: <dynatrace-cluster-name>
     flowsource/dynatrace-deploymentName: <dynatrace-deployment-name>
 spec:
-  type: <type> # website or service
-  lifecycle: <lifecycle>
-  owner: group:<owner-group>
+  type: website # website or service
+  lifecycle: experimental
+  owner: group:admin
   providesApis:
     - <component-name>-apis
   ##consumesApis:
