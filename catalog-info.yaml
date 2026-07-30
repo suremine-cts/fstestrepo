@@ -1,52 +1,9 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: flowsource-sdlc
-  appid: @'flowsource-sdlc'
-  description: flowsource sdlc support
-  annotations:
-    backstage.io/techdocs-ref: dir:.
-    # For GitHub plugin
-    flowsource/github-repo-owner: sure
-    flowsource/github-repo-name: fstestrepo
-    # For JIRA plugin
-    flowsource/jira-project-key: lkjsdfjl
-    flowsource/durationInDays: "3"
-    # For Jenkins plugin
-    flowsource/jenkins-pipelines: jenkins-pipeline-path    
-    # flowsource/dora-observability-platform: <observability-platform>
-    # flowsource/dora-jira-final-status: <jira-final-status>
-    # flowsource/jenkins-prod-deployment-job-full-project-name: <jenkins-prod-deployment-job-full-project-name>
-    # For CodeQuality Plugin
-    # flowsource/sonarqube-project-key: <sonarqube-project-key>
-    # flowsource/servicenow-configuration-item: <servicenow-configuration-item>
-    # flowsource/veracode-app-name: <veracode-app-name>
-    # flowsource/dynatrace-clusterName: <dynatrace-cluster-name>
-    # flowsource/dynatrace-deploymentName: <dynatrace-deployment-name>
+  name: axis-backstage-plugin-jira-dashboard
+  title: '@axis-backstage/plugin-jira-dashboard'
 spec:
-  type: website # website or service
   lifecycle: experimental
-  owner: group:admin
-  providesApis:
-    - sdlc-apis
-  ##consumesApis:
-   # - <your component name>
-   # - <your component name>
-# dependsOn:
-  #  - component:default/<Name of component which has dependency>
-  #subcomponentOf: component:default/<Name of the parent component>
-
-
----
-apiVersion: backstage.io/v1alpha1
-kind: API
-metadata:
-  name: sdlc-apis
-  description: flowsource-sdlc
-spec:
-  type: openapi
-  lifecycle: experimental
-  system: default/flowsource-sdlc
-  owner: group:admin
-  definition:
-    $text: C:/users/ #Path of the swagger file
+  type: backstage-frontend-plugin
+  owner: backstage-plugins-maintainers
