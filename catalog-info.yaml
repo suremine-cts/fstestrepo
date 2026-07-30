@@ -7,33 +7,28 @@ metadata:
   annotations:
     backstage.io/techdocs-ref: dir:.
     # For GitHub plugin
-    flowsource/github-repo-owner: <github-repo-owner>
-    flowsource/github-repo-name: <github-repo-name>
+    flowsource/github-repo-owner: sure
+    flowsource/github-repo-name: fstestrepo
     # For JIRA plugin
-    flowsource/jira-project-key: <jira-project-key>
-    flowsource/durationInDays: "<duration-in-days>"
+    flowsource/jira-project-key: lkjsdfjl
+    flowsource/durationInDays: "3"
     # For Jenkins plugin
-    flowsource/jenkins-pipelines: <jenkins-pipeline-path>
-    # For DORA
-    flowsource/dora-cicd-tool: <cicd-tool>
-    flowsource/dora-scm-tool: <scm-tool>
-    flowsource/dora-alm-tool: <alm-tool>
-    # flowsource/dora-itsm-tool: <itsm-tool>
+    flowsource/jenkins-pipelines: jenkins-pipeline-path    
     # flowsource/dora-observability-platform: <observability-platform>
     flowsource/dora-jira-final-status: <jira-final-status>
-    flowsource/jenkins-prod-deployment-job-full-project-name: <jenkins-prod-deployment-job-full-project-name>
+    # flowsource/jenkins-prod-deployment-job-full-project-name: <jenkins-prod-deployment-job-full-project-name>
     # For CodeQuality Plugin
-    flowsource/sonarqube-project-key: <sonarqube-project-key>
-    flowsource/servicenow-configuration-item: <servicenow-configuration-item>
-    flowsource/veracode-app-name: <veracode-app-name>
-    flowsource/dynatrace-clusterName: <dynatrace-cluster-name>
-    flowsource/dynatrace-deploymentName: <dynatrace-deployment-name>
+    # flowsource/sonarqube-project-key: <sonarqube-project-key>
+    # flowsource/servicenow-configuration-item: <servicenow-configuration-item>
+    # flowsource/veracode-app-name: <veracode-app-name>
+    # flowsource/dynatrace-clusterName: <dynatrace-cluster-name>
+    # flowsource/dynatrace-deploymentName: <dynatrace-deployment-name>
 spec:
   type: website # website or service
   lifecycle: experimental
   owner: group:admin
   providesApis:
-    - <component-name>-apis
+    - sdlc-apis
   ##consumesApis:
    # - <your component name>
    # - <your component name>
@@ -46,12 +41,12 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  name: <component-name>-apis
-  description: <description>
+  name: sdlc-apis
+  description: flowsource-sdlc
 spec:
   type: openapi
-  lifecycle: <lifecycle>
-  system: default/<component-name>
-  owner: group:<owner-group>
+  lifecycle: experimental
+  system: default/flowsource-sdlc
+  owner: group:admin
   definition:
-    $text: <path-to-swagger-file> #Path of the swagger file
+    $text: C:/users/ #Path of the swagger file
