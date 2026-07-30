@@ -15,7 +15,7 @@ metadata:
     # For Jenkins plugin
     flowsource/jenkins-pipelines: jenkins-pipeline-path    
     # flowsource/dora-observability-platform: <observability-platform>
-    flowsource/dora-jira-final-status: <jira-final-status>
+    # flowsource/dora-jira-final-status: <jira-final-status>
     # flowsource/jenkins-prod-deployment-job-full-project-name: <jenkins-prod-deployment-job-full-project-name>
     # For CodeQuality Plugin
     # flowsource/sonarqube-project-key: <sonarqube-project-key>
